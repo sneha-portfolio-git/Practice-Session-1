@@ -10,30 +10,68 @@
       crossorigin="anonymous"
     ></script>
 
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <div class="nav-items-container">
-          <h2>Bite<span style="color: red">Box</span></h2>
+          <img src="images/logo2.png" alt="Bite Box Logo" width="100" height="50" />
           <ul class="page-items-container">
             <li><a href="home.html" class="active">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="biteDeals.html">Bite Deals</a></li>
             <li>
-              <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="cart.html">Cart<i class="fa-solid fa-cart-plus"></i></a>
             </li>
             <li>
               <a href="login.html"
-                ><i class="fa-solid fa-right-to-bracket"></i
-              ></a>
+                >Login<i class="fa-solid fa-right-to-bracket"></i></a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section>Section Content</section>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Bite Box</h1>
+        <p>Delicious bites delivered to you anytime, anywhere!</p>
+        <button class="order-now-btn">Order Now</button>
+      </div>
+
+    </section>
+
+    <section class="video-section">
+      <div class="video-text">
+        <h2>Experience the Taste</h2>
+        <p>
+          Watch our video to see how we prepare our delicious bites and get a
+          glimpse of our kitchen in action.
+        </p>
+
+      </div>
+      <div class="video-box">
+        <video autoplay controls muted loop playsinline>
+          <source src="../media/video1.mp4" type="video/mp4" />
+       
+        </video>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Bite Box</h2>
+      <p>
+        Bite Box is your go-to destination for mouthwatering bites that are
+        crafted with love and delivered with care. Our mission is to bring you
+        the best flavors from around the world, right to your doorstep.
+      </p>
+    </section>
     <footer>Footer Content</footer>
   </body>
 </html>

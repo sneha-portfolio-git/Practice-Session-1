@@ -1,45 +1,126 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.nav-items-container{
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nav-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 15px 40px;
+  color: #ffffff;
+}
+
+.page-items-container {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.page-items-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page-items-container a.active {
+  color: red;
+  text-decoration: underline;
+}
+
+.page-items-container a:hover {
+  color: red;
+}
+
+.page-items-container li:last-child a {
+  background-color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.page-items-container li:last-child a:hover {
+  background-color: red;
+  color: black;
+}
+
+.hero{
+    height: 90vh;
+    background: url('../images/banner_img.jpg') no-repeat center/cover;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #000000;
-    padding: 15px 40px;
-    color: #ffffff;
+    color: #fff;
 }
 
-.page-items-container{
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}
-
-.page-items-container a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.page-items-container a.active{
-    color: red;
-    text-decoration: underline;
-}
-
-.page-items-container a:hover{
-    color: red;
-}
-
-.page-items-container li:last-child a{
-    background-color: black;
-    padding: 6px 12px;
-    border-radius:5px;
-}
-
-.page-items-container li:last-child a:hover{
+.order-now-btn {
     background-color: red;
-    color:black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.order-now-btn:hover {
+    background-color: darkred;
+}
+
+.video-section{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding:50px;
+    gap:40px;
+}
+
+.video-text{
+    flex: 1;
+}
+
+.video-box{
+    flex: 1;
+}
+
+.video-box video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-text h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.video-text p{
+    font-size: 18px;
+    color: #444;
+}
+
+.about{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9; 
+}
+
+.about h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:rgba(255,0,0, 0.615);
+}
+
+about p{
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
